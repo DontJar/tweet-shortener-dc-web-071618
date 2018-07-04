@@ -63,17 +63,16 @@ def selective_tweet_shortener (maybe_long_tweet)
 end
 
 def shortened_tweet_truncator (tweet_too_long)
-  def selective_tweet_shortener (maybe_long_tweet)
-    if maybe_long_tweet.size <= 140
-      maybe_long_tweet
-    else
-      tweet_array = maybe_long_tweet.split(" ")
-      new_tweet = []
-      tweet_array.each do |word|
-        if dictionary.include?(word)
-          new_tweet.push(dictionary[word])
-        else new_tweet.push(word)
-        end
+  if tweet_too_long.size <= 140
+    tweet_too_long
+  else
+    tweet_array = maybe_long_tweet.split(" ")
+    new_tweet = []
+    tweet_array.each do |word|
+      if dictionary.include?(word)
+        new_tweet.push(dictionary[word])
+      else new_tweet.push(word) 
+      end
     end
     new_tweet.join(" ")
   end
