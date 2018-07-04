@@ -30,7 +30,6 @@ def word_substituter (tweet)
 end
 
 def bulk_tweet_shortener (lots_of_tweets)
-  # new_tweets_together = []
   new_full_tweet = []
 
   lots_of_tweets.each do |each_tweet|
@@ -48,7 +47,6 @@ def bulk_tweet_shortener (lots_of_tweets)
 end
 
 def selective_tweet_shortener (lots_of_tweets)
-  new_tweets_together = []
   new_full_tweet = []
 
   lots_of_tweets.each do |each_tweet|
