@@ -46,3 +46,6 @@ def bulk_tweet_shortener (lots_of_tweets)
   puts new_full_tweet
   end
 end
+
+def selective_tweet_shortener
+end
