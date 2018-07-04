@@ -31,7 +31,6 @@ end
 def bulk_tweet_shortener (lots_of_tweets)
   new_tweets_together = []
   new_full_tweet = []
-  # trigger_words = dictionary.keys
 
   lots_of_tweets.each do |each_tweet|
     new_tweet = []
@@ -41,18 +40,8 @@ def bulk_tweet_shortener (lots_of_tweets)
         new_tweet.push(dictionary[word])
       else new_tweet.push(word)
       end
-# binding.pry
     new_full_tweet = new_tweet.join(" ")
-    # puts new_full_tweet
-  end
+    end
   puts new_full_tweet
-end
-    # new_tweets_together.push(new_tweet)
-    # puts new_tweets_together.join(" ")
-# binding.pry
-    # new_tweets_together.join(" ")
-  # end
-    # new_tweets_together.each do |puts_me|
-      # puts puts_me
-    # end
+  end
 end
