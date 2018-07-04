@@ -74,6 +74,6 @@ def shortened_tweet_truncator (tweet_too_long)
       else new_tweet.push(word)
       end
     end
-    new_tweet.join(" ")
+    new_tweet.join(" ")[0..140]
   end
 end
