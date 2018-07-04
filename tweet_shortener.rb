@@ -30,7 +30,7 @@ end
 
 def bulk_tweet_shortener (lots_of_tweets)
   new_tweets_together = []
-  new_full_tweet
+  new_full_tweet = []
   # trigger_words = dictionary.keys
 
   lots_of_tweets.each do |each_tweet|
