@@ -28,21 +28,21 @@ def word_substituter (tweet)
   new_tweet.join(" ")
 end
 
-def bulk_tweet_shortener (twitters)
+def bulk_tweet_shortener (lots_of_tweets)
   new_tweets_together = []
   # trigger_words = dictionary.keys
 
-  twitters.each do |full_tweet|
+  lots_of_tweets.each do |each_tweet|
     new_tweet = []
-    tweet_array = full_tweet.split(" ")
-    tweet_array.each do |word|
+    tweet_words = each_tweet.split(" ")
+    tweet_words.each do |word|
       if dictionary.include?(word)
         new_tweet.push(dictionary[word])
       else new_tweet.push(word)
       end
 # binding.pry
-    new_tweet.join(" ")
-    puts new_tweet
+    new_full_tweet = new_tweet.join(" ")
+    puts new_full_tweet
   end
   # puts new_tweet
 end
