@@ -40,8 +40,9 @@ def bulk_tweet_shortener (twitters)
       else new_tweet.push(word)
       end
 # binding.pry
-    puts new_tweet.join(" ")
+    new_tweet.join(" ")
     end
+    puts new_tweet
     # new_tweets_together.push(new_tweet)
     # puts new_tweets_together.join(" ")
 # binding.pry
