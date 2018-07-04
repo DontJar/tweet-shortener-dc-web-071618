@@ -56,7 +56,7 @@ def selective_tweet_shortener (lots_of_tweets)
     tweet_words = each_tweet.split(" ")
 
     if tweet.words.size <= 140
-      puts each_tweet      
+      puts each_tweet
     else tweet_words.each do |word|
         if dictionary.include?(word)
           new_tweet.push(dictionary[word])
