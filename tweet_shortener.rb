@@ -49,7 +49,7 @@ def bulk_tweet_shortener (twitters)
     # new_tweets_together.join(" ")
 
   end
-    new_tweets_together.each do |puts_me|
-      puts puts_me
+    # new_tweets_together.each do |puts_me|
+      # puts puts_me
     end
 end
