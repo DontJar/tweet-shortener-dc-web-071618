@@ -63,4 +63,5 @@ def selective_tweet_shortener (maybe_long_tweet)
   end
 
   def shortened_tweet_truncator (tweet_too_long)
+    
   end
