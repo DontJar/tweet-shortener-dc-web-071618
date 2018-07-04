@@ -47,7 +47,6 @@ def bulk_tweet_shortener (lots_of_tweets)
 end
 
 def selective_tweet_shortener (maybe_long_tweet)
-# binding.pry
   if maybe_long_tweet.size <= 140
     maybe_long_tweet
   else
