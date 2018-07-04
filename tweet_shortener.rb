@@ -29,8 +29,8 @@ def word_substituter (tweet)
 end
 
 def bulk_tweet_shortener (twitters)
-  trigger_words = dictionary.keys
   new_tweets_together = []
+  # trigger_words = dictionary.keys
 
   twitters.each do |full_tweet|
     new_tweet = []
