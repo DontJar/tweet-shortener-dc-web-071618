@@ -49,7 +49,7 @@ end
 def selective_tweet_shortener (lots_of_tweets)
   new_full_tweet = []
 
-  lots_of_tweets.map do |each_tweet|
+  lots_of_tweets.each do |each_tweet|
     new_tweet = []
     tweet_words = each_tweet.split(" ")
     if tweet.words.size <= 140
