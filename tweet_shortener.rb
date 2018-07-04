@@ -46,9 +46,23 @@ def bulk_tweet_shortener (lots_of_tweets)
   end
 end
 
-def selective_tweet_shortener (lots_of_tweets)
-  new_full_tweet = []
-binding.pry
+def selective_tweet_shortener (maybe_long_tweet)
+  if maybe_long_tweet.size <= 140
+    puts maybe_long_tweet
+  else
+    tweet_array = maybe_long_tweet.split(" ")
+    new_tweet = []
+    tweet_array.each do |word|
+      if dictionary.include?(word)
+        new_tweet.push(dictionary[word])
+      else new_tweet.push(word)
+      end
+    end
+    puts new_tweet.join(" ")
+    end
+
+
+
   lots_of_tweets.each do |each_tweet|
     new_tweet = []
     tweet_words = each_tweet.split(" ")
