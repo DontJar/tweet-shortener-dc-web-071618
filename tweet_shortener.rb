@@ -48,7 +48,7 @@ end
 
 def selective_tweet_shortener (lots_of_tweets)
   new_full_tweet = []
-
+binding.pry
   lots_of_tweets.each do |each_tweet|
     new_tweet = []
     tweet_words = each_tweet.split(" ")
