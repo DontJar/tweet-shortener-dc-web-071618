@@ -42,11 +42,11 @@ def bulk_tweet_shortener (twitters)
 # binding.pry
     new_tweet.join(" ")
     puts new_tweet
+  end
     # new_tweets_together.push(new_tweet)
     # puts new_tweets_together.join(" ")
 # binding.pry
     # new_tweets_together.join(" ")
-
   # end
     # new_tweets_together.each do |puts_me|
       # puts puts_me
