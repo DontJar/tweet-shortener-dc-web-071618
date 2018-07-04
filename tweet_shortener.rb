@@ -42,9 +42,9 @@ def bulk_tweet_shortener (lots_of_tweets)
       end
 # binding.pry
     new_full_tweet = new_tweet.join(" ")
-    puts new_full_tweet
+    # puts new_full_tweet
   end
-  # puts new_tweet
+  puts new_full_tweet
 end
     # new_tweets_together.push(new_tweet)
     # puts new_tweets_together.join(" ")
@@ -54,4 +54,4 @@ end
     # new_tweets_together.each do |puts_me|
       # puts puts_me
     # end
-# end
+end
