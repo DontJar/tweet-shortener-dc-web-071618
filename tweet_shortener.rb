@@ -59,9 +59,9 @@ def selective_tweet_shortener (maybe_long_tweet)
       end
     end
     new_tweet.join(" ")
-    end
   end
+end
 
-  def shortened_tweet_truncator (tweet_too_long)
+def shortened_tweet_truncator (tweet_too_long)
     
-  end
+end
