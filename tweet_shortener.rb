@@ -60,6 +60,7 @@ def selective_tweet_shortener (maybe_long_tweet)
     end
     puts new_tweet.join(" ")
     end
+  end
 
   #
   #
