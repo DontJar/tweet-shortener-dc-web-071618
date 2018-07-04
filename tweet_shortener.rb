@@ -54,7 +54,6 @@ def selective_tweet_shortener (lots_of_tweets)
   lots_of_tweets.each do |each_tweet|
     new_tweet = []
     tweet_words = each_tweet.split(" ")
-
     if tweet.words.size <= 140
       puts each_tweet
     else tweet_words.each do |word|
