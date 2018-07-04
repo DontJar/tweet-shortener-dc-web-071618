@@ -66,12 +66,12 @@ def shortened_tweet_truncator (tweet_too_long)
   if tweet_too_long.size <= 140
     tweet_too_long
   else
-    tweet_array = maybe_long_tweet.split(" ")
+    tweet_array = tweet_too_long.split(" ")
     new_tweet = []
     tweet_array.each do |word|
       if dictionary.include?(word)
         new_tweet.push(dictionary[word])
-      else new_tweet.push(word) 
+      else new_tweet.push(word)
       end
     end
     new_tweet.join(" ")
