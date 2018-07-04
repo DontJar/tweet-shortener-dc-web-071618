@@ -49,7 +49,7 @@ end
 def selective_tweet_shortener (maybe_long_tweet)
 # binding.pry
   if maybe_long_tweet.size <= 140
-    puts maybe_long_tweet.split (" ")
+    maybe_long_tweet
   else
     tweet_array = maybe_long_tweet.split(" ")
     new_tweet = []
@@ -59,7 +59,7 @@ def selective_tweet_shortener (maybe_long_tweet)
       else new_tweet.push(word)
       end
     end
-    puts new_tweet.join(" ")
+    new_tweet.join(" ")
     end
   end
 
